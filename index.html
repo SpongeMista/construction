@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braden Bullock - Under Construction</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: #000;
+      color: #fff;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      cursor: default;
+    }
+    #ascii-container, #ascii-container * {
+      cursor: default !important;
+    }
+    
+    h1 {
+      margin: 0 0 40px 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      opacity: 0.9;
+    }
+    
+    #ascii-container {
+      margin: 0 0 40px 0;
+      width: 90vw;
+      height: 70vh;
+      max-width: 1200px;
+      max-height: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      /* Ensure horizontal centering */
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .subtext {
+      font-size: 0.875rem;
+      color: #888;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+    }
+    
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+      }
+      
+      #ascii-container {
+        width: 95vw;
+        height: 60vh;
+        margin-bottom: 30px;
+      }
+      
+      .subtext {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Braden Bullock</h1>
+  <div id="ascii-container"></div>
+  <div class="subtext">Under Construction</div>
+  
+  <!-- Import Three.js from CDN -->
+  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+      "three/examples/jsm/effects/AsciiEffect.js": "https://unpkg.com/three@0.150.1/examples/jsm/effects/AsciiEffect.js",
+      "three/examples/jsm/loaders/FontLoader.js": "https://unpkg.com/three@0.150.1/examples/jsm/loaders/FontLoader.js",
+      "three/examples/jsm/geometries/TextGeometry.js": "https://unpkg.com/three@0.150.1/examples/jsm/geometries/TextGeometry.js"
+    }
+  }
+  </script>
+  
+  <script type="module" src="main.js"></script>
+</body>
+</html> 
